@@ -1,30 +1,53 @@
-EducationCompany � Datalagring
+🎓 EducationCompany – Datalagring
 
-Systemet representerar ett utbildningsf�retag som hanterar kurser, kurstillf�llen, studenter, l�rare och kursregistreringar.
+Ett system som representerar ett utbildningsföretag som hanterar:
 
-Backend �r byggt med ASP.NET Core Minimal API och Entity Framework Core (Code First) mot en SQLite-databas. En enkel React-frontend anv�nds f�r att testa och demonstrera funktionaliteten.
+Kurser
 
-Projektet �r uppdelat enligt DDD och Clean Architecture med separata lager f�r Domain, Application, Infrastructure, Presentation och Tests.
+Kurstillfällen
 
-Funktionalitet
+Studenter
 
-Systemet st�djer:
+Lärare
 
-CRUD f�r kurser
+Kursregistreringar
 
-Skapande av kurstillf�llen
+Projektet är byggt med ASP.NET Core Minimal API och Entity Framework Core (Code First) mot en SQLite-databas.
+En enkel React-frontend (Vite) används för att testa och demonstrera funktionaliteten.
 
-Skapande av studenter och l�rare
+Arkitekturen följer DDD (Domain-Driven Design) och Clean Architecture med tydlig lagerindelning.
 
-Registrering av studenter till kurstillf�llen
+🏗️ Arkitektur
 
-Kontroll av maxkapacitet
+Projektet är uppdelat i följande lager:
 
-Skydd mot dubbelregistrering
+EducationCompany
+│
+├── Domain          → Entiteter och affärsregler
+├── Application     → Use cases och affärslogik
+├── Infrastructure  → Databas och externa implementationer
+├── Presentation    → API (Minimal API)
+└── Tests           → Enhetstester (xUnit)
 
-Databasen �r normaliserad och uppfyller minst 3NF.
+Databasen är normaliserad och uppfyller minst 3NF.
 
-Tekniker
+✨ Funktionalitet
+
+Systemet stödjer:
+
+✅ CRUD för kurser
+
+✅ Skapande av kurstillfällen
+
+✅ Skapande av studenter och lärare
+
+✅ Registrering av studenter till kurstillfällen
+
+✅ Kontroll av maxkapacitet
+
+✅ Skydd mot dubbelregistrering
+
+🛠️ Tekniker
 
 .NET 8
 
@@ -38,18 +61,19 @@ React (Vite)
 
 xUnit
 
-K�ra backend
+🚀 Kom igång
+1️⃣ Starta Backend
 
-Fr�n projektets rotmapp:
+Från projektets rotmapp:
 
 dotnet run --project EducationCompany.Presentation.Api
 
-Swagger finns p�:
+Swagger UI finns på:
 
 http://localhost:5071/swagger
-K�ra tester
+2️⃣ Kör tester
 dotnet test
-K�ra frontend
+3️⃣ Starta Frontend
 
 I en separat terminal:
 
@@ -57,8 +81,8 @@ cd frontend/educationcompany-web
 npm install
 npm run dev
 
-Frontend �ppnas p�:
+Frontend öppnas på:
 
 http://127.0.0.1:5173
 
-Backend m�ste vara ig�ng samtidigt som frontend k�rs.
+⚠️ Backend måste vara igång samtidigt som frontend körs.
