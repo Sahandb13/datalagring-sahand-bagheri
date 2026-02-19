@@ -24,7 +24,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.UseCors("dev");
 
-// Auto-migrate (ok för skolprojekt)
+// Auto-migrate 
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
@@ -146,7 +146,7 @@ app.MapGet("/teachers", async (AppDbContext db) =>
     return Results.Ok(items);
 });
 
-// ---- ENROLLMENT (via Application use case) ----
+// ---- ENROLLMENT ---
 app.MapPost("/instances/{instanceId:guid}/enroll", async (AppDbContext db, Guid instanceId, EnrollDto dto) =>
 {
     try
@@ -173,7 +173,7 @@ app.MapGet("/instances/{instanceId:guid}/enrollments", async (AppDbContext db, G
 app.Run();
 
 
-// ---- DTOs (MÅSTE ligga efter app.Run() i top-level Program.cs) ----
+// ---- DTOs ) ----
 record CourseCreateDto(string Title, string? Description);
 record CourseInstanceCreateDto(DateOnly StartDate, DateOnly EndDate, int Capacity);
 record StudentCreateDto(string FirstName, string LastName, string Email);

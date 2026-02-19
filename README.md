@@ -1,6 +1,6 @@
 EducationCompany – Datalagring
 
-Detta projekt är en inlämningsuppgift i kursen Datalagring. Systemet representerar ett utbildningsföretag som hanterar kurser, kurstillfällen, studenter, lärare och kursregistreringar.
+Systemet representerar ett utbildningsföretag som hanterar kurser, kurstillfällen, studenter, lärare och kursregistreringar.
 
 Backend är byggt med ASP.NET Core Minimal API och Entity Framework Core (Code First) mot en SQLite-databas. En enkel React-frontend används för att testa och demonstrera funktionaliteten.
 
