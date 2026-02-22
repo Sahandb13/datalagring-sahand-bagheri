@@ -61,8 +61,6 @@ React (Vite)
 
 xUnit
 
-
-
 📋 Förutsättningar
 
 - .NET 8 SDK
@@ -94,3 +92,8 @@ Frontend öppnas på:
 http://127.0.0.1:5173
 
 ⚠️ Backend måste vara igång samtidigt som frontend körs.
+
+## AI-användning
+
+AI-baserade verktyg har använts som stöd vid utveckling av frontend och vissa tester.
+All kod är granskad och förstådd.
