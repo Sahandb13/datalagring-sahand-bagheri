@@ -97,3 +97,20 @@ http://127.0.0.1:5173
 
 AI-baserade verktyg har använts som stöd vid utveckling av frontend och vissa tester.
 All kod är granskad och förstådd.
+
+
+Självutvärdering – EducationCompany
+
+I denna uppgift har jag utvecklat ett system för hantering av kurser, kurstillfällen, studenter, lärare och kursregistreringar med fokus på datalagring och backendutveckling i .NET.
+
+Jag har modellerat databasen enligt principerna för relationsdatabaser och säkerställt att den är normaliserad till minst tredje normalformen (3NF). Relationer mellan entiteter är tydligt definierade och affärsregler, såsom maxkapacitet och skydd mot dubbelregistrering, hanteras i applikationslogiken.
+
+Backend är implementerat som ett ASP.NET Core Minimal API och följer principerna för Domain-Driven Design (DDD) och Clean Architecture. Lösningen är uppdelad i lager (Presentation, Application, Domain, Infrastructure och Tests) med tydlig ansvarsfördelning och korrekt beroenderiktning mellan lagren.
+
+Entity Framework Core har använts enligt Code First-principen för att hantera databasen. Jag har även implementerat enhetstester för att verifiera central funktionalitet i systemet.
+
+En enkel frontend i React har utvecklats för att kunna interagera med backend-API:et och demonstrera att systemet fungerar som avsett. Frontenden används för att skapa och hämta data samt testa registreringslogik.
+
+AI-baserade verktyg har använts som stöd under utvecklingen, främst för frontend och vissa tester. All kod har granskats, anpassats och förståtts innan den inkluderats i projektet.
+
+Sammanfattningsvis uppfyller lösningen kraven för uppgiften genom korrekt databashantering, tydlig arkitektur, fungerande API, tester samt en frontend som demonstrerar systemets funktionalitet.
