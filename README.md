@@ -61,7 +61,15 @@ React (Vite)
 
 xUnit
 
+
+
+📋 Förutsättningar
+
+- .NET 8 SDK
+- Node.js (v18 eller senare)
+  
 🚀 Kom igång
+
 1️⃣ Starta Backend
 
 Från projektets rotmapp:
